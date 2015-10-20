@@ -1,0 +1,271 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>Dextra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'landing/css/style.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'landing/css/flexslider.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'landing/css/animate.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="preloader"></div>
+
+<div class="intro">	
+	<div class="container">
+	    <nav class="navbar navbar-static-top navbar-main">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand navbar-logo"><img src="{% static 'landing/img/logoNew.png' %}"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav navbar-right navbar-right-main">
+				<li><a href="">About</a></li>
+				<li><a href="">Login</a></li>
+				<li><a href="" class="sign-up">Sign Up</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
+		<div class="cover wow fadeInUp">
+				<div class="fade-text">
+					<h2 class="quotes">Integrating <b>creativity</b> and <b>society</b></h2>
+					<h2 class="quotes">Integrating <b>art</b> and <b>technology</b></h2>
+					<h2 class="quotes">Integrating <b>you</b> and <b>me</b></h2>
+				</div>
+							
+				<div class="row icon-holder">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="row">
+							<div class="col-md-4"><img src="{% static 'landing/img/create-icon.png' %}" class="icon-image"><p>Create</p></div>
+							<div class="col-md-4"><img src="{% static 'landing/img/collaborate-icon.png' %}" class="icon-image"><p>Collaborate</p></div>
+							<div class="col-md-4"><img src="{% static 'landing/img/consume-icon.png' %}" class="icon-image"><p>Consume</p></div>
+						</div>
+					</div>
+				</div>
+				<p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a onclick="modalVideoOpen()" class="play-icon"><img src="{% static 'landing/img/play.png' %}">WATCH THE VIDEO</a>
+		</div>
+	</div>
+</div>
+
+<div class="create" id="create">
+	<div class="container" style="border-bottom: 1px solid #eeeeee;">
+		<h2>Create</h2>
+		<h5>Express and share your talent and creativity</h5>
+		<div class="row item">
+			<div class="content col-md-4 col-sm-12 col-xs-12 wow fadeInLeft">
+				<p>You may think that your creativity is of little use to the world. But we believe that each drop adds to the beauty of the ocean. Everyone is talented in their own unique way. And no talent should be hidden.</p>
+				<p>We want to read every poem written on the back of a physics book. We want to see every doodle made on the edge of the crossword. We want to listen to every tune hummed in the rain.</p>
+				<p>Whatever it is. Dance or music, drama or literature, design or art. Video or audio, image or text. Professional or hobbyist. We have an appetite for all kinds and all levels of talent. So let us bring together the different colors of our right brain. Our <i>Dextra cerebra.</i></p>
+			</div>
+			<figure class="figure figure1 col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 wow fadeInRight">
+                <img class="img-responsive" src="{% static 'landing/img/figure-2.png' %}" alt="">
+            </figure>
+		</div>
+	</div>
+</div>
+
+
+<div class="collaborate" id="collaborate">
+	<div class="container" style="border-bottom: 1px solid #eeeeee;">
+		<h2>Collaborate</h2>
+		<h5>Explore and find all the world's talent and creativity</h5>
+		<div class="row item">
+			<figure class="figure figure2 col-md-8 col-sm-12 col-xs-12 col-sm-offset-0 col-xs-offset-0 wow fadeInLeft">
+                <img class="img-responsive" src="{% static 'landing/img/figure-3.png' %}" alt="">
+            </figure>
+			<div class="content col-md-4 col-sm-12 col-xs-12 wow fadeInRight">
+				<p>Every talent that is born and would die, is an abstract resource which adds value to all of humanity. We help use these resources to fill gaps in our expression of the world around us. Gaps which exist in our own talents due to the brevity of our lives. However together we are able to convey our ideas not limited by our individual skill sets, but broadened to the horizons of human expression. </p>
+				<p>Let not our ideas slip by. Let's make every dream a reality.</p>
+				<p>You have one life. Together we have a billion.<br>You may be good at some things. Together we are the best at everything.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="examples" id="examples">
+	<div class="container">
+	<div class="wow fadeIn">
+		<h2>Connect</h2>
+		<div class="flexslider examples-slider" style="">
+		  <ul class="slides">
+			<li>
+				<img src="{% static 'landing/img/1.png' %}" class="examples-img">
+				<p>Turn your poem into a song</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/2.png' %}" class="examples-img">
+				<p>Find background music for your video</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/3.png' %}" class="examples-img">
+				<p>Find a foreign language vocalist for your band</p> 
+			</li>
+			<li>
+				<img src="{% static 'landing/img/4.png' %}" class="examples-img">
+				<p>Turn your photo into a painting</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/5.png' %}" class="examples-img">
+				<p>Turn your painting into an animated video</p> 
+			</li>
+			<li>
+				<img src="{% static 'landing/img/1.png' %}" class="examples-img">
+				<p>Find people to jam with</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/7.png' %}" class="examples-img">
+				<p>Find choreographers for your dance preparation</p> 
+			</li>
+			<li>
+				<img src="{% static 'landing/img/8.png' %}" class="examples-img">
+				<p>Find people to make a video for your idea</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/9.png' %}" class="examples-img">
+				<p>Convert your idea into a website</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/10.png' %}" class="examples-img">
+				<p>Convert your website into an app</p>
+			</li>
+			<li>
+				<img src="{% static 'landing/img/11.png' %}" class="examples-img">
+				<p>Find graphic designers to make your company logo</p>
+			</li>
+		  </ul>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<div class="contact" id="contact">
+	<div class="container">
+		<h2>Contact Us</h2>
+		<h5>We are doing this for you, so please tell us how we can make this better.</h5>
+		<div class="row item">
+			<!-- 
+			<div class="content col-md-4 col-sm-12 col-xs-12 contact-content wow bounceIn">
+				<img src="img/map.png">
+				<p>Our office is located at</br>Lorem Ipsum, Dolor Imet</p>
+			</div>
+			<div class="content col-md-4 col-sm-12 col-xs-12 contact-content wow bounceIn">
+				<img src="img/phone.png">
+				<p>You may call us at</br>+91 8888888888</p>
+			</div> 
+			-->
+			<div class="content col-md-12 col-sm-12 col-xs-12 contact-content wow bounceIn">
+				<a href="mailto:hi@dextra.xyz?Subject=Hello%20Dextra" style="text-decoration:none;color:#fff">
+					<img src="{% static 'landing/img/mail.png' %}">
+					<p>Email us at</br>hi@dextra.xyz</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<p>Dextra - All rights reserved.</p>
+</div>
+ 
+<div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dextra</h4>
+      </div> -->
+      <div class="modal-body">
+		<div class="responsive-video">
+			<iframe src="http://www.youtube.com/embed/DlRnYSHxbvk"></iframe>
+		</div>
+		
+		<div class="panel-group" id="accordion"> <!-- accordion 1 -->
+			<div class="panel video-panel-text">
+		   
+				<div class="panel-heading"> <!-- panel-heading -->
+					<h4 class="panel-title"> <!-- title 1 -->
+					<a class="video-credits" data-toggle="collapse" data-parent="#accordion" href="#accordionOne">This video has been created by collaborating with multiple people <img src="{% static 'landing/img/show.png' %}"></a>
+				   </h4>
+				</div>
+				<!-- panel body -->
+				<div id="accordionOne" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<ul>
+						<li>Cinematography & Editing: Amitesh Ranjan, Bangalore<a class="video-icon" href="https://www.youtube.com/channel/UCs3dismvboBvfvuUmSKmcJg" target="_blank"><img src="{% static 'landing/img/yt.png' %}"></a></li>
+						<li>Graphics: Anoop Sethumadhavan, Pilani<a class="video-icon" href="https://www.behance.net/anoopsethu" target="_blank"><img src="{% static 'landing/img/behance.png' %}"></a></li>
+						<li>Piano: Anton Benfey, Canada<a class="video-icon" href="https://www.youtube.com/user/Zokrar" target="_blank"><img src="{% static 'landing/img/yt.png' %}"></a></li>
+						<li>Violin: David Oh, California<a class="video-icon" href="https://www.youtube.com/channel/UCs-mMFI_3yMzxWESlQy3-mg" target="_blank"><img src="{% static 'landing/img/yt.png' %}"></a></li>
+						<li>Sound Editing: Akash Agrahari, Bangalore<a class="video-icon" href="https://blend.io/akashagrahari" target="_blank"><img src="{% static 'landing/img/blend.png' %}"></a></li>
+						<li>Equipment: Shalaka Virkar & Siddhant Jain, Bangalore</li>
+					</ul>
+				 </div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'landing/js/jquery-1.11.3.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'landing/js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'landing/js/jquery.flexslider-min.js' %}" type="text/javascript"></script>
+<script src="{% static 'landing/js/wow.min.js' %}" type="text/javascript"></script>
+<script>
+jQuery(window).load(function() {
+	    jQuery("#preloader").delay(1000).fadeOut("slow");
+})
+
+$( document ).ready(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(1000)
+            .delay(1000)
+            .fadeOut(1000, showNextQuote);
+    }
+    showNextQuote();
+});
+
+
+function modalVideoOpen(){
+	$("#modal-video").modal('show');
+}
+
+
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+	controlNav: false,
+	//directionNav:false
+  });
+});
+
+new WOW().init();
+
+$('#modal-video').on('hidden.bs.modal', function(){
+	$('#modal-video').hide();
+	$('#modal-video iframe').attr("src", jQuery("#modal-video iframe").attr("src"));
+});
+
+</script>
+</body>
+</html>
